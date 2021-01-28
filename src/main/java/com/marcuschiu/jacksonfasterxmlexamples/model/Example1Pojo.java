@@ -2,6 +2,8 @@ package com.marcuschiu.jacksonfasterxmlexamples.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+// - @JsonIgnoreProperties(ignoreUnknown = true) used to accept exceptions thrown when
+//   objectMapper sees an unrecognized field
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Example1Pojo {
     private String a;
